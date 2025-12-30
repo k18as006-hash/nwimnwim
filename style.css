@@ -306,8 +306,7 @@ li{
         font-size: 20px;
     }
     .p-section{
-        padding-top: 40%;
+        padding-top: 80px; /* or 15vh */
         font-size: 35px;
     }
-  
 }
