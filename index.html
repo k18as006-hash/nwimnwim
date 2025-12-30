@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+
+    <script src="js/speed.js" defer></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const targets = document.querySelectorAll(".jsfadein");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+        const el = entry.target;
+
+        // jsfadein01 の番号取得
+        const match = [...el.classList].find(c => /^jsfadein\d+$/.test(c));
+
+        let delay = 0;
+        if (match) {
+            const num = Number(match.replace("jsfadein", ""));
+            delay = num * 0.2; // 秒数刻み（調整可）
+        }
+
+        el.style.transitionDelay = `${delay}s`;
+
+        if (entry.isIntersecting) {
+            el.classList.add("is-show");
+        } else {
+            el.classList.remove("is-show");
+        }
+        });
+    }, {
+        rootMargin: "0px 0px -10% 0px",
+        threshold: 0
+    });
+
+    targets.forEach(el => observer.observe(el));
+    });
+    </script>
+    <script async src="//www.instagram.com/embed.js"></script>
+
+
+
+</head>
+<body class="p-content">
+    
+    <!--ul class="l-glo-nav">
+        <li>top</li>
+        <li>news</li>
+        <li>me</li>
+        <li>disc</li>
+        <li>works</li>
+        <li></li>
+    </ul-->
+    <div class="l-top-view">
+        <img class=" p-copy jsfadein" src="img/txt.png"alt="">
+        <video class="p-top-view" loop muted autoplay >
+            <source src="mov/hero.mov" type="video/mp4">
+        </video>
+        <!--img class="p-top-view" src="img/nwi2.jpg" alt=""-->
+    </div>
+    <div class="l-hero"></div>
+    <div class="p-section u-bgb -pt20">
+        <div class="p-brgd-wrap">
+            <img class="p-brgd-img img-1 jsfadein" src="img/ab1.jpg">
+            <img class="p-brgd-img img-2 jsfadein" src="img/ab2.jpg">
+            <img class="p-brgd-txt jsfadein" src="img/about.png">
+            <img class="p-brgd-img img-3 jsfadein" src="img/nwi2.jpg">
+        </div>
+        <div class="l-me">
+            <div class="p-icon">
+                <img src="img/DSCN5203.jpg" alt="">
+            </div>
+
+            <div class="p-me-text">
+                <h2><strong>nwim</strong>
+                    <a href="https://www.instagram.com/_blonde.jpg?igsh=M21ic2c4bzNzcmRw&utm_source=qr" target="_blank" rel="noopener noreferrer">
+                        <img class="p-social" src="img/instagram.png" alt="">
+                    </a>
+                    <a href="https://hypeddit.com/vphb5o" target="_blank" rel="noopener noreferrer">
+                        <img class="p-social" src="img/spotify.png" alt="">
+                    </a>
+                </h2>
+                <p>
+                Producer/Beatmaker based in Tokyo, Japan.<br>
+                With a distinctive sensitivity for textures and emotional resonance,<br>
+                nwim crafts understated yet deeply immersive beats that blur the line between lo-fi, ambient, and experimental hip-hop.
+
+                He has collaborated with baristas, rappers, and independent creators, <br>
+                sampling everyday sounds—like coffee roasters or urban field recordings—to weave sonic narratives.<br>
+                In 2025, he re-released his track “so what” featuring Tokyo-based rapper urak, which gained attention for its minimalism and refined sense of space.<br>
+
+                Balancing raw imperfection and sonic depth, his work has quietly resonated with listeners beyond genre or trend.
+                </p>
+            </div>
+        </div>
+       
+    </div>
+    <div class="p-section u-bgw">
+        <img class="p-sec-txt -pb20 jsfadein" src="img/sec-ttl-2.png">
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/5ztGFlY6BaLXnga0niqyg6?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <div class="p-section u-bgb -pb20">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DKKUqbczIGe/?igsh=MWx6eGtvNTJraWFuag==" data-instgrm-version="14" style=" background:#FFF; border:0; margin: 1px; max-width:540px; width:100%; padding:0; ">
+        </blockquote>
+</body>
+</html>
