@@ -303,10 +303,11 @@ li{
         font-size: 25px;
     }
     .l-me p,.l-me span{
-        font-size: 20px;
+        font-size: 15px;
+        line-height: 1.65;
     }
     .p-section{
         padding-top: 80px; /* or 15vh */
-        font-size: 35px;
+        
     }
 }
