@@ -410,7 +410,21 @@ li{
 .-pb20{
     padding-bottom: 10%;
 }
-
+.-pt0{
+    padding-top: 0!important;
+}
+.-mb30{
+    margin-bottom:30px;
+}
+.-np{
+    padding-top: 10%;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 13%;
+}
+.-pb0{
+    padding-bottom: 0!important;
+}
 /* ===== loading全体 ===== */
 #loading {
   position: fixed;
@@ -555,6 +569,9 @@ li{
   .disc-item img {
     max-width: 100%; /* 横幅いっぱいに拡大 */
   }
+  .-np{
+    padding-bottom: 12%;
+}
 }
 
 
