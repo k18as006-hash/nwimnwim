@@ -341,6 +341,44 @@ li{
     color: var(--white);
 }
 
+/* ===== VMボタン ===== */
+.vm-btn {
+  display: flex;              /* フレックスで中央寄せ */
+  justify-content: center;    /* 横方向中央 */
+  align-items: center;        /* 縦方向中央 */
+  position: relative;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  
+}
+
+.vm-btn img {
+  display: block;             /* ブロック化で余白削除 */
+  max-width: 100px;
+  height: auto;
+  transform: translate(2px);
+}
+
+/* 上下の控えめな線 */
+.vm-btn::before,
+.vm-btn::after {
+  content: "";
+  position: absolute;
+  left: 10%;                  /* 両端から少し余白 */
+  width: 80%;                  /* 線の長さ */
+  height: 1px;
+  background:var(--white);
+}
+.-b::before,
+.-b::after {
+  background:var(--blk);
+}
+
+.vm-btn::before { top: 0; }   /* 上線 */
+.vm-btn::after  { bottom: 0; } /* 下線 */
+
+
+
 /* 初期状態 */
 .jsfadein {
   opacity: 0;
