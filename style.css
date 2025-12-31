@@ -29,6 +29,16 @@ h2,h3,h4,h5,h6{
     font-weight: bold;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+a:hover{
+    opacity: 0.7;
+    transform: scale(1.05);
+}
 p,span{
   font-feature-settings:
     "pkna" on,
@@ -396,6 +406,84 @@ li{
 #wrap.is-show {
   opacity: 1;
 }
+
+.audio-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgb(139, 139, 139); /* 白の線 */
+  border-radius: 50%;      /* 丸ボタン */
+  background: transparent; /* 背景なし */
+  color: rgb(139, 139, 139);             /* アイコン白 */
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transition: transform 0.2s;
+}
+
+.audio-btn:hover {
+  transform: scale(1.1);
+}
+
+
+.audio-btn:hover {
+  transform: scale(1.1);
+}
+
+
+.disc-grid {
+  display: grid;
+  
+  
+  gap: 2rem;
+  justify-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.disc-item {
+  margin: 0 auto;
+  width: 100%;         /* 親に合わせる */
+  max-width: 300px;    /* 画像の最大幅と同じに揃える */
+  text-align: center;  /* pを中央揃え */
+}
+
+.disc-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.disc-item p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  word-wrap: break-word; /* 長い単語でも折り返す */
+  text-align: left;   
+  font-weight: bold;
+}
+#discography {
+  background: #1b1b1bd9;
+}
+
+
+/* PC以上で横並び */
+@media screen and (min-width: 768px) {
+  .disc-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 横並び */
+    gap: 2.5rem;
+  }
+  
+  .disc-item img {
+    max-width: 100%; /* 横幅いっぱいに拡大 */
+  }
+}
+
+
 
 
 @media screen and (max-width:450px){
