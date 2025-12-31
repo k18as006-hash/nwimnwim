@@ -27,3 +27,17 @@ window.addEventListener("load", () => {
     loading.remove();
   }, 4000);
 });
+
+const audio = document.getElementById("audioPlayer");
+const btn = document.getElementById("playBtn");
+
+btn.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.play();
+    btn.textContent = "⏸"; // 再生中は一時停止アイコン
+  } else {
+    audio.pause();
+    btn.textContent = "▶︎"; // 停止中は再生アイコン
+  }
+});
+
