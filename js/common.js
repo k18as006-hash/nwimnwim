@@ -28,16 +28,23 @@ window.addEventListener("load", () => {
   }, 4000);
 });
 
+// ===== 右下オーディオボタン =====
 const audio = document.getElementById("audioPlayer");
 const btn = document.getElementById("playBtn");
+const icon = btn.querySelector(".icon");
 
 btn.addEventListener("click", () => {
   if (audio.paused) {
     audio.play();
-    btn.textContent = "⏸"; // 再生中は一時停止アイコン
+    icon.classList.remove("play");
+    icon.classList.add("pause");
   } else {
     audio.pause();
-    btn.textContent = "▶︎"; // 停止中は再生アイコン
+    icon.classList.remove("pause");
+    icon.classList.add("play");
   }
 });
+
+
+
 
