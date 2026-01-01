@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nwim Web profile</title>
+    <title>nwim | Beatmaker from Tokyo</title>
+
      <!-- OGP -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="nwim Web profile">
+    <meta property="og:title" content="nwim | Beatmaker from Tokyo">
     <meta property="og:description" content="Producer/Beatmaker based in Tokyo, Japan. With a distinctive sensitivity for textures and emotional resonance, nwim crafts understated yet deeply immersive beats that blur the line between lo-fi, ambient, and experimental hip-hop.">
     <meta property="og:image" content="img/nwi2.jpg">
+
+    <meta name="description" content="Beatmaker based in Tokyo, Japan. Blending lo-fi, ambient, and experimental hip-hop with emotional textures.">
 
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="nwim Web profile">
+    <meta name="twitter:title" content="nwim | Beatmaker from Tokyo">
     <meta name="twitter:description" content="Producer/Beatmaker based in Tokyo, Japan. With a distinctive sensitivity for textures and emotional resonance, nwim crafts understated yet deeply immersive beats that blur the line between lo-fi, ambient, and experimental hip-hop.">
     <meta name="twitter:image" content="img/nwi2.jpg">
     <link rel="stylesheet" href="style.css">
@@ -56,6 +59,28 @@
     </script>
     <script async src="//www.instagram.com/embed.js"></script>
 
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "nwim",
+    "jobTitle": "Producer / Beatmaker",
+    "url": "https://nwim-nwim.github.io/nwimnwim/",
+    "image": "https://nwim-nwim.github.io/nwimnwim/img/nwi2.jpg",
+    "sameAs": [
+        "https://www.instagram.com/_blonde.jpg",
+        "https://hypeddit.com/vphb5o"
+    ],
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tokyo",
+        "addressCountry": "JP"
+    }
+    }
+    </script>
+
+
 
 
 </head>
@@ -71,8 +96,8 @@
     <!-- loading -->
     <div id="loading">
         <div class="loading-inner">
-        <img id="logo1" src="img/logo.png" alt="">
-        <img id="logo2" src="img/txt2.png" alt="">
+        <img id="logo1" src="img/logo.png" alt="nwim">
+        <img id="logo2" src="img/txt2.png" alt="Low fidelity,High feels. Makes lo-fi music.">
         </div>
     </div>
     <div id="top"></div>
@@ -80,13 +105,13 @@
     <div id="wrap">
         <header>
             <a href="#top">
-            <img class="p-logo" src="img/logo.png" alt="">
+            <img class="p-logo" src="img/logo.png" alt="nwim">
             </a>
         </header>
         <div class="l-top-view">
-            <img class=" p-copy jsfadein" src="img/txt.png"alt=""> 
+            <img class=" p-copy jsfadein" src="img/txt.png"alt="Low fidelity, High feels. Makes lo-fi music."> 
             <video class="p-top-view" loop muted autoplay playsinline >
-                <source src="mov/hero.mov" type="video/mp4">
+                <source src="mov/hero.mov" type="video/mp4" alt="Hero video">
             </video>
             <!--img class="p-top-view" src="img/nwi2.jpg" alt=""-->
         </div>
@@ -102,34 +127,34 @@
 
 
         <!-- 音源 -->
-        <audio id="audioPlayer" src="audio/audio1.wav" preload="auto" loop></audio>
+        <audio id="audioPlayer" src="audio/audio1.wav" preload="auto" loop alt="nwim-tape4"></audio>
 
         <div class="l-hero"></div>
-        <div class="p-section u-bgb -np -pb0">
+        <section class="l-about p-section u-bgb -np -pb0">
             <div class="u-100clip -np">
                 <div class="p-brgd-wrap">
-                    <img class="p-brgd-img img-1 jsfadein" src="img/ab1.jpg">
-                    <img class="p-brgd-img img-2 jsfadein" src="img/ab2.jpg">
-                    <img class="p-brgd-txt jsfadein" src="img/about.png">
-                    <img class="p-brgd-img img-3 jsfadein" src="img/nwi2.jpg">
+                    <img class="p-brgd-img img-1 jsfadein" src="img/ab1.jpg" alt="">
+                    <img class="p-brgd-img img-2 jsfadein" src="img/ab2.jpg" alt="">
+                    <img class="p-brgd-txt jsfadein" src="img/about.png" alt="cozy grooves,late night moves.">
+                    <img class="p-brgd-img img-3 jsfadein" src="img/nwi2.jpg" alt="">
                 </div>
             </div>
-        </div>
-        <div class="p-section u-bgb -pt0">
+        </section>
+        <section class="l-aboutme p-section u-bgb -pt0">
             <div class="l-me ">
                 <div class="p-icon">
                     <img src="img/DSCN5203.jpg" alt="">
                 </div>
 
                 <div class="p-me-text -pb20">
-                    <h2><strong>nwim</strong>
+                    <h1><strong>nwim</strong>
                         <a href="https://www.instagram.com/_blonde.jpg?igsh=M21ic2c4bzNzcmRw&utm_source=qr" target="_blank" rel="noopener noreferrer">
                             <img class="p-social" src="img/instagram.png" alt="">
                         </a>
                         <a href="https://hypeddit.com/vphb5o" target="_blank" rel="noopener noreferrer">
                             <img class="p-social" src="img/spotify.png" alt="">
                         </a>
-                    </h2>
+                    </h1>
                     <p>
                     Producer/Beatmaker based in Tokyo, Japan.<br>
                     With a distinctive sensitivity for textures and emotional resonance,<br>
@@ -152,9 +177,9 @@
                 
 
             </div>
-        </div>
+        </section>
         
-        <div class="p-section u-bgw">
+        <section class="l-listen p-section u-bgw">
             <img class="p-sec-txt -pb20 jsfadein" src="img/sec-ttl-2.png">
             <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/5ztGFlY6BaLXnga0niqyg6?utm_source=generator&theme=0" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             <br>
@@ -163,25 +188,25 @@
                     <img src="img/vm_b.png" alt="詳しく見る">
                 </a>
             </div>
-        </div>
+        </section>
 
         <!--div class="p-section u-bgb -pb20">
             <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DKKUqbczIGe/?igsh=MWx6eGtvNTJraWFuag==" data-instgrm-version="14" style=" background:#FFF; border:0; margin: 1px; max-width:540px; width:100%; padding:0; ">
             </blockquote>
         </div>-->
-        <div id="discography" class="p-section u-bgb -pb20 -pb20">
+        <section id="discography" class="l-discography p-section u-bgb -pb20 -pb20">
             <img class="p-sec-txt -pb20 jsfadein" src="img/sec-ttl-3.png">
             <div class="disc-grid">
                 <div class="disc-item">
                     <a href="https://open.spotify.com/intl-ja/album/0R1CAzmJWH2aZNkKjGxWDD?si=A7lpwS8yTneVmqNFJS2Auw" target="_blank" rel="noopener noreferrer">
-                        <img src="img/dg2.jpg" alt="Album 1" class="jsfadein">
+                        <img src="img/dg2.jpg" alt="So What Alt Take var." class="jsfadein">
                         <span class="single">single</span>
                         <p>So What Alt Take var.</p>
                     </a>
                 </div>
                 <div class="disc-item">
                     <a href="https://open.spotify.com/intl-ja/album/7pCZV3shMI1b9iZJKbhB0e?si=WDpeFbP3Qe2pWyo-fGxZ6g" target="_blank" rel="noopener noreferrer">
-                        <img src="img/dg1.png" alt="Album 2" class="jsfadein">
+                        <img src="img/dg1.jpg" alt="Still dreaming, Please don't let me know that" class="jsfadein">
                         <span class="EP">EP</span>
                         <p>Still dreaming, Please don't let me know that</p>
                     </a>
@@ -190,7 +215,7 @@
                  <br><br>
             </div>                
             </div>
-        </div>
+        </section>
         <!--div class="p-backtotop u-bgb">
         <a href="#top">
             <span class="arrow">&gt;</span> <br>BACK TO TOP
